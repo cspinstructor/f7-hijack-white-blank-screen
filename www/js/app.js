@@ -28,9 +28,26 @@ var app = new Framework7({
   routes: routes,
   vi: {
     placementId: 'pltd4o7ibb9rc653x14'
+  },
+  on: {
+    init: function() {
+      console.log('App initialized');
+    },
+    pageInit: function() {
+      console.log('Page initialized');
+      addMainView();
+    }
   }
 });
 
 function sayHello() {
   alert('hello paul');
 }
+
+function addMainView() {
+  console.log('addMainView called');
+}
+
+app.views.create('.view', {
+  url: '/'
+});
