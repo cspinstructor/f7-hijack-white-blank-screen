@@ -35,7 +35,8 @@ var app = new Framework7({
     init: function() {
       console.log('App initialized');
       this.views.create('.view', {
-        pushState: false
+        pushState: false,
+        url: '/'
       });
     }
   }
