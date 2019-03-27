@@ -37,7 +37,8 @@ var app = new Framework7({
       console.log(document.location.href);
       this.views.create('.view-main', {
         pushState: false,
-        url: '../index.html'
+        url: './index.html',
+        router: false
       });
     }
   }
