@@ -34,14 +34,22 @@ var app = new Framework7({
   on: {
     init: function() {
       console.log('App initialized');
-      addMainView();
+
+      this.views.create('.view', {
+        url: '/'
+      });
     },
     pageInit: function() {
       console.log('Page initialized');
+      this.views.create('.view', {
+        url: '/'
+      });
     },
     initOnDeviceReady: function() {
       console.log('App initialized');
-      addMainView();
+      this.views.create('.view', {
+        url: '/'
+      });
     }
   }
 });
@@ -50,10 +58,8 @@ function sayHello() {
   alert('hello paul');
 }
 
-function addMainView() {
-  alert('addMainView called');
-}
+app.init();
 
-app.views.create('.view', {
-  url: '/'
+app.on('deviceready', function() {
+  console.log('app.init called');
 });
