@@ -35,7 +35,7 @@ var app = new Framework7({
     init: function() {
       console.log('App initialized');
       console.log(document.location.href);
-      this.views.create('.view-main', {
+      this.views.create('.view', {
         pushState: false,
         url: './index.html',
         router: false
