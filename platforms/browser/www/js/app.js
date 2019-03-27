@@ -45,7 +45,7 @@ function sayHello() {
 }
 
 function addMainView() {
-  console.log('addMainView called');
+  alert('addMainView called');
 }
 
 app.views.create('.view', {
