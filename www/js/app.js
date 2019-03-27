@@ -34,7 +34,7 @@ var app = new Framework7({
   on: {
     init: function() {
       console.log('App initialized');
-      this.views.create('.view-main', {
+      this.views.create('.view', {
         pushState: false
       });
     }
