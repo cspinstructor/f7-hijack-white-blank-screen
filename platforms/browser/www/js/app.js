@@ -37,12 +37,6 @@ var app = new Framework7({
       this.views.create('.view-main', {
         pushState: false
       });
-    },
-    pageInit: function() {
-      console.log('Page initialized');
-      this.views.create('.view-main', {
-        pushState: false
-      });
     }
   }
 });
