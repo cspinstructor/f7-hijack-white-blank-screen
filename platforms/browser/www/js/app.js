@@ -34,3 +34,5 @@ var app = new Framework7({
 function sayHello() {
   alert('hello paul');
 }
+
+var mainView = app.views.create('.view-main');
