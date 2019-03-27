@@ -32,10 +32,10 @@ var app = new Framework7({
   on: {
     init: function() {
       console.log('App initialized');
+      addMainView();
     },
     pageInit: function() {
       console.log('Page initialized');
-      addMainView();
     }
   }
 });
