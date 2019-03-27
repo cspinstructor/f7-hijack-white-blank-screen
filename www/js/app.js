@@ -35,7 +35,7 @@ var app = new Framework7({
     init: function() {
       console.log('App initialized');
       console.log(document.location.href);
-      this.views.create('.view', {
+      this.views.create('.view-main', {
         pushState: false,
         url: 'index.html'
       });
@@ -46,9 +46,3 @@ var app = new Framework7({
 function sayHello() {
   alert('hello paul');
 }
-
-app.init();
-
-app.on('deviceready', function() {
-  console.log('app.init called');
-});
