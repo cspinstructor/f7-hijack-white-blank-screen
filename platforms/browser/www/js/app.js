@@ -34,21 +34,14 @@ var app = new Framework7({
   on: {
     init: function() {
       console.log('App initialized');
-
-      this.views.create('.view', {
-        url: './index.html'
+      this.views.create('.view-main', {
+        pushState: false
       });
     },
     pageInit: function() {
       console.log('Page initialized');
-      this.views.create('.view', {
-        url: './index.html'
-      });
-    },
-    initOnDeviceReady: function() {
-      console.log('App initialized');
-      this.views.create('.view', {
-        url: './index.html'
+      this.views.create('.view-main', {
+        pushState: false
       });
     }
   }
