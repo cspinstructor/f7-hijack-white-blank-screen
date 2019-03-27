@@ -29,6 +29,8 @@ var app = new Framework7({
   vi: {
     placementId: 'pltd4o7ibb9rc653x14'
   },
+  init: true,
+  initOnDeviceReady: true,
   on: {
     init: function() {
       console.log('App initialized');
@@ -36,6 +38,10 @@ var app = new Framework7({
     },
     pageInit: function() {
       console.log('Page initialized');
+    },
+    initOnDeviceReady: function() {
+      console.log('App initialized');
+      addMainView();
     }
   }
 });
