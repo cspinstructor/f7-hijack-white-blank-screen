@@ -36,19 +36,19 @@ var app = new Framework7({
       console.log('App initialized');
 
       this.views.create('.view', {
-        url: 'index.html'
+        url: './index.html'
       });
     },
     pageInit: function() {
       console.log('Page initialized');
       this.views.create('.view', {
-        url: 'index.html'
+        url: './index.html'
       });
     },
     initOnDeviceReady: function() {
       console.log('App initialized');
       this.views.create('.view', {
-        url: 'index.html'
+        url: './index.html'
       });
     }
   }
