@@ -29,19 +29,7 @@ var app = new Framework7({
   vi: {
     placementId: 'pltd4o7ibb9rc653x14'
   },
-  init: true,
-  initOnDeviceReady: true,
-  on: {
-    init: function() {
-      console.log('App initialized');
-      console.log(document.location.href);
-      this.views.create('.view', {
-        pushState: false,
-        url: './index.html',
-        router: false
-      });
-    }
-  }
+  pushStateRoot: './index.html'
 });
 
 function sayHello() {
